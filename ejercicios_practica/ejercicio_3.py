@@ -8,7 +8,7 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con comprensión de listas
-
+import random
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -20,6 +20,13 @@ if __name__ == '__main__':
     # números, conteniendo del 0 al 10 inclusive
 
     # lista_0_10 = [......]
+    lista_0_10 = []
+    for n in range(0,11):
+        if n>=0:
+            lista_0_10.append(n)
+            print(lista_0_10) 
+
+
 
     # 2)
     # Generar una lista a partir de comprensión de listas,
@@ -34,6 +41,11 @@ if __name__ == '__main__':
 
     # tabla_5 = [......]
 
+    tabla_5=[0,1,2,3,4,5,6,7,8,9,10]
+    tabla = [n *5 for n in tabla_5]
+    print(tabla)
+
+
     # 3)
     # Generar una lista a partir de comprensión de listas,
     # esta lista generada deberá contener 10 números aleatorios,
@@ -44,5 +56,8 @@ if __name__ == '__main__':
     # https://docs.python.org/3/library/random.html
 
     # dias_mes = [.....]
+
+    dias_mes=[random.randint(0,30) for p in range(0,10)]
+    print(dias_mes)
 
     print("terminamos")

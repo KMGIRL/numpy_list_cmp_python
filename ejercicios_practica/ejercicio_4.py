@@ -25,6 +25,17 @@ if __name__ == '__main__':
     # TIP: Recomendamos ver el método "isdigit" de strings
     # para aplicar en este caso.
     list_numeros_str = ['5', '2', '3', '', '7', 'NaN']
+    lista=[x for x in list_numeros_str if x.isdigit()]
+    print(lista)
+    resultado= [int(i) for i in lista]
+    print(resultado)
+
+    list_numeros_str2 = ['5', '-2', '3', '', '7', 'NaN']
+    lista2=[x for x in list_numeros_str2 if x.isdigit()]
+    print(lista2)
+    resultado2= [int(i) for i in lista2]
+    print(resultado2)
+
 
 
     # ¿Ya terminaron el ejercicio? ¿Por qué no prueban

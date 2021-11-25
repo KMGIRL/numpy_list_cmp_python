@@ -30,11 +30,23 @@ if __name__ == '__main__':
 
     # personal_1_10 = [.....]
 
+    personal_1_10=[]
+    for x in accesos:
+        if x in range(1,11):
+            personal_1_10.append(x)
+            print(personal_1_10)
+
+
+
+
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
     # cuyo ID de personal esté dentro de los ID válidos para ingresar
     # por ese molinete:
     id_validos = [3, 4, 7, 8, 15]
+
+    lista3 = [x for x in accesos for y in id_validos if x==y]
+    print('ok',lista3)
     # Debe generar una nueva lista basada en "accesos" filtrada por los ID
     # aprobados en "id_validos".
     # TIP: Utilizar el operador "in" para chequear si un ID de accesos está

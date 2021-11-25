@@ -17,12 +17,17 @@ if __name__ == '__main__':
     # 1)
     # Realizar una funcion lambda que retorne el tamaño
     # (len) de un string pasado como parámetro
-
+    palabras = ['Inove', 'casa', 'programacion']
     # len_string = lambda......
+    len_string= lambda x:len(palabras)
+    print("la longitud es ", len_string)
+
 
     # 2)
     # Lista de string
     palabras = ['Inove', 'casa', 'programacion']
+    palabras_len=list(map(len_string, palabras))
+    print(palabras_len)
 
     # Utilice la función map para mapear una lambda expression
     # que retorne el tamaño (len) de cada texto em cata iteración
